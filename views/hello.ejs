@@ -1,0 +1,70 @@
+<body>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <div class="container">
+    <h1 class="text-center mt-3 mb-3">당근북스 대여 신청</h1>
+    <div class="card">
+      <div class="card-header">신청 폼</div>
+      <div class="card-body">
+        <form method="post" action="/form/<%= pageId %>">
+          <div class="mb-3">
+            <label>책 제목</label>
+            <input
+              type="text"
+              name="bookName"
+              id="bookName"
+              class="form-control"
+              value="<%= bookName %>"
+            />
+          </div>
+          <div class="mb-3">
+            <label>멤버 이름</label>
+            <input
+              type="text"
+              name="memberName"
+              id="memberName"
+              class="form-control"
+              value="<%= memberName %>"
+            />
+          </div>
+          <div class="mb-3">
+            <label>멤버 이메일</label>
+            <input
+              type="text"
+              name="memberEmail"
+              id="memberEmail"
+              class="form-control"
+              value="<%= memberEmail %>"
+            />
+          </div>
+          <div class="mb-3">
+            <label>신청인 이메일</label>
+            <input type="text" name="email" id="email" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label>신청인 이름</label>
+            <input type="text" name="name" id="name" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <input
+              type="submit"
+              name="submit_button"
+              class="btn btn-primary"
+              value="대여 신청"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
